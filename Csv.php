@@ -1,8 +1,6 @@
 <?php
 /**
  * Name: 数据导出类(csv)
- * Created by PhpStorm.
- * User: hualu@myhexin.com
  * Date: 2017/11/14
  * Time: 14:50
  */
