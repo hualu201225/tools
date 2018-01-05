@@ -287,7 +287,7 @@ class Public_Excel_Csv
             $lineCount ++;
             if ($lineCount > $this->_limitCount) {
                 fwrite($this->_fileop, $this->_getEncodingContent($line));
-                $this->_resetFileop();
+                //$this->_resetFileop();
                 $line = '';
                 $lineCount = 0;
             }
