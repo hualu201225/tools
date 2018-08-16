@@ -424,7 +424,7 @@ class Public_Excel_Csv
 
             foreach ($item as $v) {
                 //检测是否为标量
-                if (!is_scalar($v)) {
+                if (!is_scalar($v) && $v !== null) {
                     $this->_errorCode = SELF::ERROR_DATAVALID;
                     return false;
                 }
@@ -446,7 +446,7 @@ class Public_Excel_Csv
         }
 
         foreach ($data as $item) {
-            if (!is_scalar($item)) {
+            if (!is_scalar($item) && $v !== null) {
                 return false;
             }
         }
